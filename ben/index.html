@@ -1,0 +1,60 @@
+
+<?php
+	session_start();
+?>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Access Page</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="superior">
+<div class="form-box">
+<div class="botton-box">
+<div id="btn"></div>
+<button type="button" class="t-btn" onClick="login()">Log In</button>
+<button type="button" class="t-btn" onClick="register()">Register</button>
+</div>
+<div class="social-icon">
+<img src="images/fb.jpg">
+<img src="images/twt.jpg">
+<img src="images/ins.jpg">
+</div>
+<form id="login" class="user-input" action="includes/login.inc.php" method="post">
+<input type="text" class="input-field"  name="mailusername" placeholder="Email or Username" required>
+<input type="password" class="input-field" name="pwd" placeholder="Enter Password" required>
+<input type="checkbox" class="check-box"> <span>Remember Password</span>
+<button type="submit" class="submit-btn" name="login-submit"> Log in </button>
+</form>
+<form id="register" class="user-input" action="includes/signup.inc.php" method="post">
+<input type="text" class="input-field"  name="username" placeholder="Username" required>
+<input type="text" class="input-field" name="email" placeholder="Email" required>
+<input type="password" class="input-field" name="pwd" placeholder="Password" required>
+<input type="password" class="input-field" name="pwd-repeat" placeholder="Repeat Password" required>
+<input type="checkbox" class="check-box"> <span>I agree to the terms and conditions</span>
+<button type="submit" class="submit-btn" name="signup-submit"> Register </button>
+</form>
+</div>
+</div>
+<script>
+		var x = document.getElementById("login");
+		var y = document.getElementById("register");
+		var z = document.getElementById("btn");
+
+	function register(){
+		x.style.left="-400";
+		y.style.left="50";
+		z.style.left="100";
+		}
+
+	function login(){
+		x.style.left="50";
+		y.style.left="450";
+		z.style.left="0";
+		}
+
+		</script>
+</body>
+</html>
