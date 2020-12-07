@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JQuery | Light your Bulb</title>
+	<script type="text/javascript" src="jquery-1.10.2.min.js"></script>
+	<style type="text/css">
+		.house{
+			background-color: #faebd7;
+			padding-top: 5px;
+		}
+
+		.bulb-holder {
+			background-color: black;
+			display: block;
+			height: 550px;
+			width: 550px;
+			margin: 5px 150px 20px 400px;
+
+		}
+
+		.off {
+			margin: 10px;
+			padding: 70px;
+			height: 400px;
+		}
+
+		.on {
+			margin: 10px;
+			padding: 70px;
+			height: 400px;
+			display: none;
+		}
+
+		.control-box {
+			background-color: #ffa07a;
+			padding: 15px;
+		}
+
+		button {
+			margin: 0px 100px 0px 100px;
+			border-radius: 20px;
+			background: #4169e1;
+		    color: #ffffff;
+		    padding: 5px;
+		}
+	</style>
+</head>
+<body>
+<script type="text/javascript">
+	$(document).ready(echo());
+
+	function echo() {
+		alert('Lets go light that bulb! Are you ready?');
+	}
+
+	function turniton() {
+		$('#onbulb').show();
+		$('#offbulb').hide();
+	}
+
+	function turnitoff() {
+		$('#onbulb').hide();
+		$('#offbulb').show();
+	}
+
+</script>
+
+<div class="house">
+	
+	<div class="bulb-holder">
+
+		<div class="off" id="offbulb">
+			<img src="./JQueryImages/off.png">
+		</div>
+
+		<div class="on" id="onbulb">
+			<img src="./JQueryImages/on.png">
+		</div>
+
+	</div>
+
+	<div class="control-box">
+
+		<button onclick="turniton()">Switch On</button>
+
+		<button onclick="turnitoff()" style="float: right;">Switch Off</button>
+
+	</div>
+
+</div>
+
+</body>
+</html>

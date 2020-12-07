@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Calculator</title>
+	<meta charset="utf-8">
+	<meta name="author" content="O'Brien">
+	<script type="text/javascript" src="./lib/jquery-2.1.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="./lib/fontawesome-all.css">
+	<script type="text/javascript" src="./lib/fontawesome-all.js"></script>
+	<!--<script type="text/javascript" src="./lib/bootstrap.min.css"></script>-->
+
+	<style type="text/css">
+		.cal-container{
+			background-color: #faebd7;
+			padding: 5px 400px 5px 400px;
+			height: 700px;
+		}
+
+		.cal-content {
+			margin: 50px;
+			background-color: #faccc8;
+			width: 245px;
+			padding-top: 10px;
+			border-radius: 20px;
+			box-shadow: ;
+			z-index: 1;
+		}
+
+		.lcd {
+			height: 100px;
+			background-color: #ffffff;
+			padding: 15px;
+			border-top-right-radius: 20px;
+			border-top-left-radius: 20px;
+			margin: 10px 10px 0px 10px; 
+		}
+
+		.operation-lcd {
+			height: 40px;
+			text-align: right;
+			font-size: 20px;
+			width: 190px;
+		}
+
+		.result-lcd {
+			height: 50px;
+			width: 190px;
+			text-align: right;
+			font-size: 30px;
+		}
+
+		input {
+			border-style: none;
+			cursor: none;
+		}
+
+		.key {
+			padding: 15px;
+		}
+
+
+		button {
+			width: 50px;
+			height: 50px;
+			padding: 8px;
+			text-align: center;
+			font-size: 20px;
+			border-radius: 50px;
+			margin: 4px 0px 4px 0px;
+			cursor: pointer;
+			  
+		}
+
+		.equal-btn {
+			width: 210px;
+		}
+
+		button:hover {
+			background-color:
+			opacity: 0.8; 
+		}
+
+	</style>
+
+</head>
+<body>
+
+
+<div class="cal-container">
+	<div class="cal-content">
+		<div class="lcd">
+			<input type="text" class="operation-lcd" id="operation-lcd" value="0" readonly />
+			<input type="text" class="result-lcd" id="result-lcd" value="0" readonly />
+		</div>
+
+		<div class="key">
+
+			<button data-type="operator" data-value="%" id="modulus" onclick="extract(this)">%</button>
+			<button data-type="operator" data-value="cs" id="clear" onclick="allclear()">CS</button>
+			<button data-type="operator" data-value="Bksp" id="delete" onclick="extractDelete(this)"><i class="fas fa-arrow-left"></i></button>
+			<button data-type="operator" data-value="." id="decimal" onclick="extract(this)">.</button><br />
+			<button data-type="number" data-value="1" id="n1" onclick="extract(this)">1</button>
+			<button data-type="number" data-value="2" id="n2" onclick="extract(this)">2</button>
+			<button data-type="number" data-value="3" id="n3" onclick="extract(this)">3</button>
+			<button data-type="operator" data-value="+" id="plus" onclick="extract(this)">+</button><br />
+			<button data-type="number" data-value="4" id="n4" onclick="extract(this)">4</button>
+			<button data-type="number" data-value="5" id="n5" onclick="extract(this)">5</button>
+			<button data-type="number" data-value="6" id="n6" onclick="extract(this)">6</button>
+			<button data-type="operator" data-value="-" id="minus" onclick="extract(this)">-</button><br />
+			<button data-type="number" data-value="7" id="n7" onclick="extract(this)">7</button>
+			<button data-type="number" data-value="8" id="n8" onclick="extract(this)">8</button>
+			<button data-type="number" data-value="9" id="n9" onclick="extract(this)">9</button>
+			<button data-type="operator" data-value="*" id="multiply" onclick="extract(this)">x</button><br />
+			<button data-type="operator" data-value="&&" id="and" onclick="extract(this)">&&</button>
+			<button data-type="number" data-value="0" id="n0" onclick="extract(this)">0</button>
+			<button data-type="operator" data-value="||" id="or" onclick="extract(this)">||</button>
+			<button data-type="operator" data-value="/" id="divide" onclick="extract(this)">/</button><br />
+			<button class="equal-btn" data-type="operator" data-value="=" id="calculate" onclick="extract(this)">=</button>
+
+		</div>
+	</div>
+
+</div>
+
+	<script type="text/javascript">
+		function extract(elementId){//onclick, get the clicked element by ID
+			operationLcd = document.getElementById("operation-lcd");//tell where the element will act
+        
+			if (operationLcd.value == "0" || operationLcd.value == ""){//compare if act area is free or not 
+				operationLcd.value  = elementId.textContent;
+			} else {
+					operationLcd.value  += elementId.textContent;
+					}
+		}
+
+		function allclear(){
+			document.getElementById("operation-lcd").value = "0";//set the value of O-lcd back to 0.
+		}
+
+		function extractDelete(elementId){
+			operationLcd = document.getElementById("operation-lcd");
+
+			if (operationLcd.value == "0" || operationLcd.value == "" || operationLcd.value == "elementId.textContent"){
+				operationLcd.value -= elementId.textContent;
+			} else {
+					operationLcd.value -= elementId.textContent;
+
+						console.log=("you deleted a value");
+					}
+
+		}
+
+	</script>
+	
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JQuery Class | Introduction</title>
+	<script type="text/javascript" src="jquery-1.10.2.min.js"></script>
+
+	<style type="text/css">
+	.maindiv{
+		border: 1px solid brown; 
+		width: auto; 
+		height: auto; 
+		padding: 10px;
+	}
+
+	.leftchild{
+		border: 1px solid; 
+		float: left; 
+		position: relative; 
+		padding: 10px; 
+		background-color: aqua; 
+		height: 150px;
+	}
+
+	button {
+		display: block;
+		width: 130px;
+		border-radius: 30px;
+		margin: 20px 0px 20px 0px;
+	}
+	
+	.rightchild {
+		background-color: #aaabbb;
+		display: block; 
+		position: relative; 
+		margin-left: 170px; 
+		padding: 10px; 
+		border: 1px solid pink; 
+		height: 625px;
+		overflow: hidden;
+	}
+
+	.red {
+		background-color: red;
+		margin: 10px;
+		padding: 100px;
+		height: 400px;
+		display: none;
+	}
+	.blue {
+		background-color: blue;
+		margin: 30px;
+		padding: 200px;
+		height: 400px;
+		display: none;
+	}
+
+	.yellow {
+		background-color: yellow;
+		margin: 50px;
+		padding: 300px;
+		height: 400px;
+		display: none;
+	}
+
+	</style>
+</head>
+<body>
+	<script type="text/javascript">
+
+		$(document).ready(firstjquery());
+		
+		function firstjquery() {
+			alert('Hello JQuery, You are good to go!');
+		}
+
+		function firstbuttonaction() {
+			$('#one').show();
+			$('#two').hide();
+			$('#three').hide();
+		}
+
+		function secondbtnaction() {
+			$('#one').hide();
+			$('#two').show();
+			$('#three').hide();
+		}
+
+		function thirdbtnaction() {
+			$('#one').hide();
+			$('#two').hide();
+			$('#three').show();
+		}
+
+
+	</script>
+
+<div class="maindiv">
+	
+	<div class="leftchild">
+		<button onclick="firstbuttonaction()">Click Me</button>
+		<button onclick="secondbtnaction()">Click me too</button>
+		<button onclick="thirdbtnaction()">Don't forget me</button>
+	</div>
+
+	<div class="rightchild">
+		<div class="red" id="one">hey, did you click on me??</div>
+		<div class="blue" id="two">I was expecting you.</div>
+		<div class="yellow" id="three">Am happy, you remembered me!</div>
+	</div>
+
+</div>
+
+
+</body>
+</html>

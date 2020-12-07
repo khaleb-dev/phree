@@ -1,0 +1,78 @@
+/* My e-Shopping Mall should respond to all screen size */
+
+@charset="utf-8"
+
+
+/* Medium screens */
+@media (max-width: 1000px) {
+  .content {
+	float: left;
+	width: 400px;
+	height: 594px;
+	margin: auto;
+	border-style: solid;
+	border-color: #6495ed;
+	position: relative;
+	overflow-y: scroll;
+	overflow-x: scroll;
+	padding-left: 15px;
+	display: block;
+}
+
+}
+
+/* small screens */
+@media (min-width: 768px) {
+  .selector {
+    property: value;
+  }
+}
+
+/* Medium screens */
+@media (min-width: 992px) {
+  .selector {
+    property: value;
+  }
+}
+
+/* Large screens */
+@media (min-width: 1200px) {
+  .selector {
+    property: value;
+  }
+ }
+
+
+ @media (max-width: 767px) {
+ 	.hidden-xs {
+ 		display: none!important
+ 		}
+ 	}
+
+
+
+/*.app-search {
+	position:relative;
+	margin:0
+			}
+.app-search a{position:absolute;top:20px;right:10px;color:#4c5667}
+.app-search .form-control:focus {
+	border: none;
+	font-size:13px;
+	color:#4c5667;
+	padding-left:20px;
+	padding-right:40px;
+	background:rgba(255,255,255,.9);
+	box-shadow:none;
+	height:30px;
+	font-weight:600;
+	width:180px;
+	display:inline-block;
+	line-height:30px;
+	margin-top:15px;
+	border-radius:40px;
+	transition:.5s ease-out
+	}
+.app-search .form-control::-moz-placeholder{color:#4c5667;opacity:.5}
+.app-search .form-control::-webkit-input-placeholder{color:#4c5667;opacity:.5}
+.app-search .form-control::-ms-placeholder{color:#4c5667;opacity:.5}

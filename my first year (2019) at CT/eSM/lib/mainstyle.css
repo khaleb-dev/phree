@@ -1,0 +1,346 @@
+@charset="utf-8"
+
+body {
+	background: #F6F6ED;
+	font-family: Comic Sans MS, Consolas, Tahoma;
+
+}
+
+ul {
+	list-style-type: none; /* remove bullets */
+	}
+
+li {
+	position: relative;
+	display: inline; /* make list items appear on same line */
+	}
+
+a {
+    color: #444444;
+    text-decoration: none;
+	}
+
+a:hover, a:focus, a:active {
+		    background: #4169e1;
+		    color: #ffffff;
+		    border-radius: 5px;
+		    padding: 3px;
+							}
+
+		/* The Header only */
+.head header /* let this style be applied only to the header tag */{
+	border-style: solid; /* create and make border visible */
+	border-color: #872998; /* set border color */
+	padding-top: 20px; /*space between top of text and top of border */
+	padding-bottom: 20px; /*space between bottom of text and bottom of border */
+	text-transform: uppercase; /* capitalize all text in header tag */
+	text-align: center; /* move text to center */
+}
+
+/* The Top Navigation Panel */
+.navbar {
+	position: relative; /* place navbar div relative to header */
+	display: block; /* place navbar div on the next line after the header */
+	border-style: solid; /* create and make border visible */
+	border-color: #00ff00; /* set border color */
+	height: 53px;
+	background-color: #faebd7;
+}
+
+.stay-on-left {
+		float: left;
+		position: relative;
+		height: auto;
+}
+
+.stay-on-right {
+		float: right;
+		/*border: 1px solid black;*/ 
+		margin-right: 30px;
+		position: relative;
+	}
+
+.line {
+	border-right: 1px solid #eeeeee;
+}
+
+.searchbar {
+			border: 2px solid red;
+			margin: 0px 0px 0px 0px;
+			width: 220px;
+			display: inline-block;
+			border-radius:40px;
+			}
+
+.searchbar:hover {
+	transition:.5s ease-out;
+	width: 300px;
+}
+
+.search-input:hover {
+	transition:.5s ease-out;
+	width: 270px;
+}
+
+.search-input{
+				border-radius: 20px 0 0 20px;
+				border: none;
+				width: 190px; 
+				font-size: 12px;
+				margin-left: 1px;
+			}
+
+.go a:hover {
+	background-color: #dddddd;
+}
+
+/*.navbarnav {
+			float: right;
+			position: relative;
+}*/
+
+/* Social Navigation Panel to appear via hover effect */
+.social{
+		float: left; 
+		position: absolute;
+		display: block;
+		border-style: solid;
+		border-color: #ff0000;
+}
+
+/* The three main layout */
+.sheild {
+		display: block; /*place sheild div on the next line after the header/navbar div */
+		position: relative;  /* sheild div relative to header/navbar div */
+		margin: auto;
+		height: 600px;
+		border-style: solid;
+		border-color: #ff6789;
+}
+
+.side-nav {
+		float: left;
+		width: 150px;
+		height: 594px;
+		border-style: solid;
+		border-color: #ff0099;
+		overflow-x: scroll;
+
+}
+
+/* caring for dropdowns */
+.drop {
+  background-color: #faebd7;
+  color: #000000;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  display: block;
+}
+
+/* position the brand containers close to dropdown content */
+.my-dropdown {
+  position: relative;
+}
+
+.drop-content { /* hidden by default */
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+ 
+}
+
+/* dropdown links */
+.drop-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.drop-content a:hover {
+	background-color: #dddddd;
+}
+
+/* display dropdown on hover */
+.my-dropdown:hover .drop-content {
+	display: block;
+	
+}
+
+/* dropdown btn bgcolor changes on display of dropdown content */
+.my-dropdown:hover .drop {
+	background-color: #ffa07a;
+	color: #ffffff;
+} 
+
+/* side-nav anchor link */
+.side-nav a, .foot-nav a{
+		display: block;
+		border-bottom: 1px solid #eeeeee;
+		padding-left: 5px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+}
+
+.content {
+	float: left;
+	width: 900px;
+	height: 594px;
+	margin: auto;
+	border-style: solid;
+	border-color: #6495ed;
+	position: relative;
+	overflow-y: scroll;
+	overflow-x: scroll;
+	padding-left: 15px;
+	display: block;
+}
+
+.img-on-showcase {
+			width: 250px;
+			height: 280px;
+			margin: 10px 15px 5px 5px;
+			position: relative;
+		}
+
+.img-on-showcase:hover {
+			border: 1px solid #dcdcdc;
+		}
+
+.adverts {
+		border-style: solid;
+		border-color: #800000;
+		float: right;
+		width: 230px;
+		height: 594px;
+		position: relative;
+		overflow-y: scroll;
+}
+
+.footer {
+		height: 223px;
+
+		border-style: solid;
+		border-color: #e9967a;
+}
+
+.foot {
+	border-style: solid;
+	border-color: #87cefa;
+	width: 400px;
+	float: left;
+	position: relative;
+	display: inline; /*place footer tag on the next line after the header/navbar div */
+	text-align: left;
+	padding: 10px 0px 10px 0px;
+	font-size: 13.5px;
+}
+
+.foot-nav {
+		float: left;
+		width: 680px;
+		height: 217px;
+		margin: auto;
+		border-style: solid;
+		border-color: #6495ed;
+		position: relative;
+}
+
+.calendar {
+		font-size: 13.5px;
+		position: relative;
+		float: right;
+		width: 229px;
+		border-style: solid;
+		border-color: #ffd700;
+
+}
+
+
+/* Login beauty */
+ {
+
+}
+
+
+
+
+
+/* signup beauty */
+.sform_container, .mem-lform_container { 
+	display: none; 
+	position: fixed; 
+	z-index: 1; 
+	left: 0; 
+	top: 0; 
+	width: 100%; 
+	height: 100%; 
+	overflow: auto; 
+	background-color: rgba(0,0,0,0.4); 
+	padding-top: 60px; 
+}
+
+.sform { 
+	background-color: #fefefe; 
+	margin: 5% auto 15% auto; 
+	/*border: 1px solid #888;*/
+	width: 80%; 
+}
+
+.fancy { 
+	-webkit-animation: animatezoom 0.6s; 
+	animation: animatezoom 0.6s 
+}
+
+.close_form{ 
+	text-align: center; 
+	margin: 24px 0 12px 0; 
+	position: relative; 
+}
+
+.times-circle { 
+	position: absolute; 
+	right: 25px; 
+	top: 0; 
+	color: #000; 
+	font-size: 35px; 
+	font-weight: bold; 
+} 
+
+.times-circle:hover, .times-circle:focus { 
+	color: red; 
+	cursor: pointer; 
+}
+
+.input { 
+	width: 100%; 
+	padding: 12px 20px; 
+	margin: 8px 0; 
+	display: inline-block; 
+	border: 1px solid #ccc; 
+	box-sizing: border-box; 
+} 
+
+
+.button { 
+	background-color: #ffa07a; 
+	color: white; 
+	padding: 14px 20px; 
+	margin: 8px 0; 
+	border: none; 
+	cursor: pointer; 
+	width: 100%; 
+} 
+
+button:hover { 
+	opacity: 0.8; 
+} 
+
+.cell { 
+	padding: 16px; 
+} 
+

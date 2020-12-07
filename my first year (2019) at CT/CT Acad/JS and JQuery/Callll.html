@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <title>Calculator built on phone</title>
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, user-scalable=yes">
+    <meta name="author" content="O'Brien">
+ <style>
+
+   body {
+    font-family: Verdana, sans-serif;
+    font-size: 0.8em;
+    margin: 0px;
+    background: white;
+        }
+
+   #content {
+    text-align: center;
+    margin: 5px;
+    padding: 8px;
+            }
+
+   button {
+    width: 60px;
+    text-align: center;
+    font-size: 35px;
+    background-color: white;
+    color: black;
+    border: cornflowerblue solid 1px;
+    box-shadow:1px 2px 3px 1px black;
+    text-shadow:1px 1px 3px black;
+           }
+   .numbs {
+    background-color: #ffb6c1;
+    color: 
+          }
+
+   input {
+    width: 250px;
+    font-size: 30px;
+    background-color: white;
+    color: blue;
+    border: cornflowerblue solid 1px;
+    text-align: right;
+    box-shadow:1px 2px 3px 1px black;
+    text-shadow:1px 1px 3px black;
+        }
+
+ </style>
+</head>
+
+<body>
+       <div id='content'>
+          <div id='content-app'>
+                    <input type='text' id='field1' readonly value='0' /><br />
+                    <input text='text' id='field2' readonly value='0' style="color: red" />
+                    <br /><br />
+
+                    <button onclick='setOperator(this)' id='modulus'>%</button>
+                    <button onclick='cleartxt()' id='C'>C</button>
+                    <button onclick='removeLastNumber()' id='removeLast'>Bk</button>
+                    <button onclick='setDecimal(this)' id='dec'>.</button><br /><br />
+                    <button onclick='writeNumber(this)' id='n1' class='numbs'>1</button>
+                    <button onclick='writeNumber(this)' id='n2' class='numbs'>2</button>
+                    <button onclick='writeNumber(this)' id='n3' class='numbs'>3</button>
+                    <button onclick='setOperator(this)' id='sum'>+</button><br /><br />
+                    <button onclick='writeNumber(this)' id='n4' class='numbs'>4</button>
+                    <button onclick='writeNumber(this)' id='n5' class='numbs'>5</button>
+                    <button onclick='writeNumber(this)' id='n6' class='numbs'>6</button>
+                    <button onclick='setOperator(this)' id='sustract'>-</button><br /><br />
+                    <button onclick='writeNumber(this)' id='n7' class='numbs'>7</button>
+                    <button onclick='writeNumber(this)' id='n8' class='numbs'>8</button>
+                    <button onclick='writeNumber(this)' id='n9' class='numbs'>9</button>
+                    <button onclick='setOperator(this)' id='multi'>*</button><br /><br />
+                    <button onclick='setOperator(this)' id='multi'>&&</button>                    
+                    <button onclick='writeNumber(this)' id='n0' class='numbs'>0</button>
+                    <button onclick='setOperator(this)' id='multi'>||</button>
+                    <button onclick='setOperator(this)' id='divide'>/</button><br /><br />
+                    <button onclick='calculate()' id='calcular' style='width:255px'>=</button>
+          </div>
+            </div>
+    
+    <script>
+function writeNumber(elementId){
+     var outputValueTo = document.getElementById('field1');
+        
+        if(outputValueTo.value =='0' || outputValueTo.value =='Syntax error'){
+            outputValueTo.value  =elementId.textContent;
+        }else{
+
+            outputValueTo.value  +=elementId.textContent;
+        }
+}
+
+function cleartxt(){
+    document.getElementById('field1').value='0';
+  
+}
+    </script>
+</body>
+</html>

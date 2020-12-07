@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+		<title>My e-Shopping Mall | MSM</title>
+	<meta http-equiv="Content-Type" charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="My e-Shopping Mull">
+	<meta name="keywords" content="e-Shopping,phones,assesories,shoes,Calabar">
+	<!-- <link href="./images/favicon.png" rel="icon" type="image/x-icon"> not ready-->
+	<link rel="stylesheet" type="text/css" href="./lib/mainstyle.css">
+	<link rel="stylesheet" type="text/css" href="./lib/mainstyle2.css">
+	<link rel="stylesheet" type="text/css" href="./lib/fontawesome-all.css">
+	<script type="text/javascript" src="./lib/fontawesome-all.js"></script>
+	<script type="text/javascript" src="./lib/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="./lib/item-qwery.js"></script>
+	<script type="text/javascript" src="./lib/newsletter.js"></script>
+	<script type="text/javascript" src="./lib/core.js"></script>
+
+</head>
+<body>
+
+<div class="head">
+	<header id="header" role="header">
+	<!--<img src="./images/logo.png" alt="MSM Logo"> logo not ready--><i class="fas fa-cart-plus"></i> my e-Shopping mall
+	</header>
+</div>
+<!-- Main Navigation Panel located on top of page should remain on top even while scrolling -->
+	<div class="navbar">
+		<nav id="topnav">
+				<div class="stay-on-left">
+					<ul>
+						<li class="line"><a href="">Home&nbsp;&nbsp;&nbsp;</a></li>
+						<li class="line"><a href="">&nbsp;&nbsp;Products&nbsp;&nbsp;&nbsp;</a></li>
+						<li><a href="">&nbsp;&nbsp;About&nbsp;&nbsp;</a></li>
+						<li>&nbsp;&nbsp;&nbsp;&nbsp;</li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<li class="searchbar" >
+							<form role="Search" accept-charset="UTF-8">
+										<input name="find" type="text" placeholder="Search for items . . ." class="search-input">
+											<a href="" class="go"><i class="fa fa-search"></i></a>
+											<!--<button class="search-btn">Search</button>-->
+							</form>
+						</li>
+					</ul>
+				</div>
+				<div class="stay-on-right">
+					<ul>
+						
+						<li><span onclick="document.getElementById('sdata').style.display='block'" style="width: auto; border-radius: 50px;" title="Create Account" class="account"><i class="fas fa-user-plus"></i></span>
+						</li>&nbsp;&nbsp;
+						<li><span onclick="document.getElementById('ldata').style.display='block'" style="width: auto; border-radius: 50px;" title="Login" class="account"><i class="fas fa-sign-in-alt"></i></span>
+						</li>&nbsp;&nbsp;
+					</ul>
+				</div>
+		</nav>
+	</div>
+<!-- newsletter -->
+		<div id="nwlr" style="display: none;"></div>
+
+<!-- Login Form -->
+		<div class="mem-lform_container" id="ldata">
+			<form action="" method="POST" class="sform fancy">
+				<div class="rounded ex close_form">
+					<span onclick="document.getElementById('ldata').style.display='none'" class="times-circle" title="Close"><i class="fas fa-times-circle"></i></span>
+				</div>
+				<div class="cell">
+					<label for="email"><b>Account ID:</b> </label>
+						<input type="text" name="mem-loginID" class="pull input" id="mem-loginID" placeholder="Email, Username, or Phone Number"/><br />
+					<label><b>Password</b></label> 
+						<input type="password" placeholder="Enter Password" class="pull input" name="mem-psw" id="mem-psw" required><br />
+						<input type="checkbox" checked="checked"> Remember me 
+
+				</div>
+				<div class="cell" style="background-color: #faebd7;">
+						<button type="button" class="rounded btn button" onClick="validator()">Login</button>
+							<span class="psw"><a href="#">Forgot password?</a></span> 
+
+				</div>
+			</form>
+		</div>
+
+
+<!-- Signup Form -->
+		<div class="sform_container" id="sdata">
+			<form action="" method="POST" class="sform fancy">
+				<div class="rounded ex close_form">
+					<span onclick="document.getElementById('sdata').style.display='none'" class="times-circle" title="Close"><i class="fas fa-times-circle"></i></span>
+				</div>
+				<div class="cell">
+					<label for="surname">Surname</label>
+						<input type="text" class="pull input" id="surname" placeholder="Enter Surname" autofocus /><br />
+					<label for="othernames">Other Names</label>
+						<input type="text" class="pull input" id="othernames" placeholder="Enter Other Names"/><br />
+					<label for="email">Email: </label>
+						<input type="email" name="email" class="pull input" id="email" placeholder="username@domain.com"/><br />
+					<label for="mobile">Phone Number: </label>
+						<input type="number" class="pull input" name="mobile" placeholder="+234 (0) 801 234 5678"/><br />
+				</div>
+				<div class="cell" style="background-color: #faebd7;">
+						<button type="button" class="rounded btn button" onClick="validator()">Sign Up</button>
+				</div>
+			</form>
+		</div>
+
+<!-- Social Navigation Panel to appear via hover effect 
+<div class="social">
+<nav class="social" id="social">
+	
+		<a href="https://www.facebook.com/my.e-shopping.mall"><i class="fas fa-facebook"></i></a>
+		<a href="https://www.twitter.com/my.e-shopping.mall"><i class="fas fa-twitter"></i></a>
+		contactus@domain.com
+		<tel: +2341234567890>+2341234567890</tel>
+
+</nav>
+</div>-->
+<div class="sheild">
+		<div class="side-nav">
+			<nav id="leftnav" class="">
+				<h3>TOP CATEGORIES</h3>
+					<div class="my-dropdown">
+						<span class="drop">Brand &nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-chevron-down"></i></span>
+						<div class="drop-content">
+							<a href="">Samsung</a>
+							<a href="">Gionee</a>
+							<a href="">Tecno</a>
+							<a href="">BlackBerry</a>
+							<a href="">Itel</a>
+							<a href="">iPhone</a>
+						</div>
+					</div>
+					<div class="my-dropdown">
+						<span class="drop">Prize &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-chevron-down"></i></span>
+						<div class="drop-content">
+							<a href=""></a>
+						</div>
+					</div>
+					<div class="my-dropdown">
+						<span class="drop">OS &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-chevron-down"></i></span>
+						<div class="drop-content">
+							<a href="">Android (Google Inc.)</a>
+							<a href="">iOS (Apple)</a>
+							<a href="">BlackBerry (Research In Motion</a>
+							<a href="">Windows Mobile (Windows Phone)</a>
+						</div>
+					</div>
+ 
+				<h4>CLASSIFICATIONS</h4>
+				<a href="">Long Lasting Battery</a>
+				<a href="">Camera</a>
+				<a href="">Screen Size</a>
+				<a href="">Screen Type</a>
+				<a href="">Ram</a>
+				<a href="">Rom</a>
+				<a href=""></a>
+
+				<h3>ACCESSORIES</h3>
+				<a href="">Chargers</a>
+				<a href="">Earphones</a>
+				<a href=""></a>
+			</nav>
+		</div>
+
+		<div class="adverts" id="recent">
+			Advertisment Items will appear here
+		</div>
+
+		<div class="content" id="floss">
+			<div>
+				<img src="./images/samsung-galaxy-s9.jpg" alt="Samsung Galaxy S9" title="Samsung Galaxy S9" id="sgs9" class="img-on-showcase" onClick="sgs9()">
+
+				<img src="./images/samsung-galaxy-s9-plus.jpg" alt="Samsung Galaxy S9 Plus" title="Samsung Galaxy S9 Plus" id="sgs9pro" class="img-on-showcase" onClick="sgs9pro()">
+
+				<img src="./images/huawei-mate-20-pro.jpg" alt="Huawei Mate 20 Pro" title="Huawei Mate 20 Pro" id="hm20pro" class="img-on-showcase" onClick="hm20pro()">
+
+				<img src="./images/samsung-galaxy-note-9-black.jpg" alt="Samsung Galaxy Note 9" title="Samsung Galaxy Note 9" id="sgn9" class="img-on-showcase" onClick="sgn9">
+
+				<img src="./images/google-pixel-3.jpg" alt="Google Pixel 3" title="Google Pixel 3" id="gp3" class="img-on-showcase" onClick="gp3">
+
+				<img src="./images/infinix-zero-5-main.jpg" alt="Infinix Zero 5" title="Infinix Zero 5" id="iz5" class="img-on-showcase" onClick="iz5">
+
+				<img src="./images/lg-v40-thinq.png" alt="LG V40 ThinQ" title="LG V40 ThinQ" id="lgv40thinq4" class="img-on-showcase" onClick="lgv40thinq4">
+
+				<img src="./images/xiaomi-mi-8-pro.jpg" alt="Xiaomi Mi 8 Pro" title="Xiaomi Mi 8 Pro" id="xm8" class="img-on-showcase" onClick="xm8">
+
+				<img src="./images/lg-g7-thinq.jpg" alt="LG G7 ThinQ" title="LG G7 ThinQ" id="lgg7tq" class="img-on-showcase" onClick="lgg7tq">
+
+				<img src="./images/xiaomi-mi-8-pro-pink.jpg" alt="Xiaomi Mi 8 Pro (Pink)" title="Xiaomi Mi 8 Pro" id="xm8propink" class="img-on-showcase" onClick="xm8propink">
+
+				<img src="./images/oppo-find-x.png" alt="Oppo Find X" title="Oppo Find X" id="ofx" class="img-on-showcase" onClick="ofx">
+				
+				<img src="./images/oneplus-6t.jpg" alt="OnePlus 6T" title="OnePlus 6T" id="op6t" class="img-on-showcase" onClick="op6t">
+
+				<img src="./images/huawei-p20-pro.jpg" alt="Huawei P20 Pro" title="Huawei P20 Pro" id="hp20pro" class="img-on-showcase" onClick="hp20pro">
+
+				<img src="./images/huawei-p20.jpg" alt="Huawei P20" title="Huawei P20" id="hp20" class="img-on-showcase" onClick="hp20">
+
+				<img src="./images/oppo-find-x-lamborghini.jpg" alt="Oppo Find X (Lamborghini)" title="Oppo Find X - Lamborghini" id="ofxlambor" class="img-on-showcase" onClick="ofxlambor">
+
+				<img src="./images/sony-xperia-xz3.png" alt="Sony Xperia XZ3" title="Sony Xperia XZ3" id="sxxz3" class="img-on-showcase" onClick="sxxz3">
+
+				<img src="./images/htc-u12-plus.jpg" alt="HTC U12 Plus" title="HTC U12 Plus" id="htcu12p" class="img-on-showcase" onClick="htcu12p">
+
+				<img src="./images/blackberry-key2.jpg" alt="BlackBerry KEY2" title="BlackBerry KEY2" id="bbkey2" class="img-on-showcase" onClick="bbkey2">
+
+				<img src="./images/samsung-galaxy-s8.png" alt="Samsung Galaxy S8" title="Samsung Galaxy S8" id="sgs8" class="img-on-showcase" onClick="sgs8">
+
+				<img src="./images/samsung-galaxy-s8-plus.png" alt="Samsung Galaxy S8 Plus" title="Samsung Galaxy S8 Plus" id="sgs8p" class="img-on-showcase" onClick="sgs8p">
+
+				<img src="./images/samsung-galaxy-note-8.png" alt="Samsung Galaxy Note 8" title="Samsung Galaxy Note 8" id="sgn8" class="img-on-showcase" onClick="sgn8">
+
+				<img src="./images/tecno-phantom-8.png" alt="Tecno Phantom 8" title="Tecno Phantom 8" id="tp8" class="img-on-showcase" onClick="tp8">
+
+				<!-- <img src="./images/.jpg" alt="" title="" id="" class="img-on-showcase" onClick="">
+
+				<img src="./images/.jpg" alt="" title="" id="" class="img-on-showcase" onClick="">
+
+				<img src="./images/.jpg" alt="" title="" id="" class="img-on-showcase" onClick=""> -->
+			</div>
+		</div>
+</div>
+
+<div class="footer">
+	<div>
+		<footer class="foot" id="footer" role="footer">
+			My e-Shopping Mall - Copyright &copy; 2019 - All Rights Reserved.<br>
+				Designed By <a href="https://www.facebook.com/caleb.uche.52"> Khaleb O'Brien</a> at CT-Academy
+		</footer>
+	</div>
+
+	<div class="foot-nav">
+		<a href="">Services</a>
+		<a href="">Team</a>
+		<a href="">Address</a>
+		<a href="">Contact</a>
+		<a href="">Pickup Stations</a>
+		<a href="">Delivery</a>
+	</div>
+
+	<div class="calendar">
+		<section id="calendar-header" class="calendar-section">
+			<header>
+				<h3 class="calendar-title"><i class="fas fa-calendar-alt"></i> - February</h3>
+			</header>
+		<div id="calendar-table" class="calendar-body">
+			<table id="calendar-table">
+					<thead>
+						<tr>
+							<th scope="col" title="Monday">Mon</th>
+							<th scope="col" title="Tuesday">Tue</th>
+							<th scope="col" title="Wednesday">Wed</th>
+							<th scope="col" title="Thursday">Thur</th>
+							<th scope="col" title="Friday">Fri</th>
+							<th scope="col" title="Saturday">Sat</th>
+							<th scope="col" title="Sunday">Sun</th>
+						</tr>
+					</thead>
+
+						<tbody>
+							<tr>
+								<td class="cal">&nbsp;</td><td class="cal">&nbsp;</td><td class="cal">&nbsp;</td><td class="cal">&nbsp;</td>
+								<td>1</td><td>2</td><td>3</td>
+							</tr>
+							<tr>
+								<td>4</td><td class="update" id="new-item" title="New Item Available"><a href="">5</a></td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td>
+							</tr>
+							<tr>
+								<td>11</td><td id="today" title="Today">12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td>
+							</tr>
+							<tr>
+								<td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td>
+							</tr>
+							<tr>
+								<td>25</td><td>26</td><td>27</td><td>28</td>
+								<td class="cal">&nbsp;</td><td class="cal">&nbsp;</td><td class="cal">&nbsp;</td>
+							</tr>
+						</tbody>
+
+						<tfoot>
+							<tr>
+								<td colspan="3" id="previous-month"><a href=""><i class="fas fa-angle-double-left"></i> Jan</a></td>
+								<td class="cal">&nbsp;</td>
+								<td colspan="3" id="next-month" class="cal"><a href=""><i class="fas fa-angle-double-right"></i> March</a></td>
+							</tr>
+						</tfoot>
+			</table>
+		</div>
+		</section>
+	</div>
+<!-- end of Calendar -->
+
+</div>
+
+</body>
+</html>

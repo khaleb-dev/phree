@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>use of float | 15th Feb. 2019</title>
+
+<style type="text/css">
+	body {
+		font-family: Comic Sans MS;
+		font-size: 20px;
+		background-color: #9370db;
+		text-align: center;
+		border: 2px solid #000000;
+	}
+	.orange{
+		background-color: #ffa500;
+		padding: 10px 10px 10px 10px;
+	}
+	.purple{
+		background-color: #800080;
+	}
+	.brown{
+		background-color: #a52a2a;
+	}
+	.blanchedalmond{
+		background-color: #ffebcd;
+		height: 500px;
+		margin: auto;
+		text-align: left;
+		padding: 15px 15px 15px 15px;
+		position: relative;
+		display: block;
+	}
+	.yellow{
+		background-color: #ffff00;
+		float: left;
+		width: 250px;
+		height: 400px;
+		margin-right: 8px;
+		padding: 20px 20px 20px 20px;
+		text-align: center;
+
+	}
+	.red{
+		background-color: #ff0000;
+		float: left;
+		width: 580px;
+		height: 400px;
+		margin: auto;
+		padding: 20px 20px 20px 20px;
+		text-align: center;
+
+	}
+	.blue{
+		background-color: #0000ff;
+		border: 2px solid #0000ff;
+		float: right;
+		width: 330px;
+		height: 400px;
+		padding: 20px 20px 20px 20px;
+		text-align: center;
+		}
+
+	.green{
+		background-color: #7fff00;
+		position: relative;
+		display: block;
+		padding: 15px 15px 15px 15px;
+		height: 500px;
+		margin: auto;
+		text-align: left;
+	}
+	.midnightblue{
+		background-color: #191970;
+		text-align: center;
+		float: left;
+		width: 600px;
+		height: 400px;
+		padding: 30px 30px 30px 30px;
+	}
+	.lightseagreen{
+		background-color: #20b2aa;
+		text-align: center;
+		float: right;
+		position: absolute;
+		margin-left: 700px;
+		height: 400px;
+		padding: 30px 30px 30px 30px;
+	}
+	.lawngreen{
+		background-color: #7fffd4;
+	}
+
+</style>
+</head>
+<body>
+<div class="orange">
+	I am a parent div with two children: header and nav.
+	<header class="purple"> I am a header created using the header tag.</header>
+	<nav class="brown"> I am a navigation panel. I am created using the nav tag and placed inside the same div with the header tag</nav>
+</div>
+
+<div class="blanchedalmond">
+	I am a div with three children div inside of me: yellow, red, and blue. I have a line break after my text. This is to tell my children that they should appear under my text. You can say that I have three sections.<br/>
+	<div class="yellow">I am the first child-div floating to the left.</div>
+
+	<div class="red">I am the second child-div floating to the left.</div>
+
+	<div class="blue">I am the third and the last child-div floating to the right.</div>
+
+</div>
+
+<div class="green">
+	I am a div with two children div inside of me: midnightblue and lightseagreen. You can say that I have two sections.<br/>
+	<div class="midnightblue">I am a div floating to the left.</div>
+
+	<div class="lightseagreen">I am a div with a difference, I am not floating.</div>
+</div>
+
+	<footer class="lawngreen">I am a footer. I am not in a div tag.</footer>
+
+</body>
+</html>

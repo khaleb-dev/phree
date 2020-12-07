@@ -1,0 +1,284 @@
+@charset="utf-8"
+
+html {
+	font-family: "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+body{
+	font-family: "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 14px;
+	}
+
+.all{
+	background: #F6F6ED;
+	}
+
+.centered{
+		text-align: center;
+		max-width: ;
+		margin: 0 auto;
+		width: 100%;
+		}
+
+.navbar{
+		letter-spacing: 0px;
+		background: #deb887;
+		padding-top: 8px;
+		padding-bottom: 8px;
+	}
+
+.navbarnav {
+			float: right;
+}
+
+.account {
+		border-radius: 50px;
+		float: right;
+		font-size: 20px;
+		}
+
+a {
+    color: #444444;
+    text-decoration: none;
+	}
+
+a:hover, a:focus, a:active {
+    background: #4169e1;
+    border-radius: 5px;
+    padding: 5px;
+    text-decoration: none;
+    }
+
+ul {
+	li
+	}
+
+li {
+	position: relative;
+	display: inline-block;
+	font-size: 16px;
+	}
+
+.line {
+	border-right: 1px solid #eeeeee;
+
+}
+
+.searchbar{
+			border: none;
+			position: relative;
+			float: left;
+			margin: 0px 0px 0px 0px;
+			max-width: auto;
+			display: inline-block;
+			}
+
+.search-input{
+				border-radius: 5px 0 0 5px;
+				border-right: 0;
+				border: none;
+				float: left;
+				font-size: 18px;
+			}
+.random {
+		position: relative;
+		margin-left: 200px;
+		margin-right: 300px;
+		border-color: #000000;
+		border-style: none;
+		text-align: justify;
+		float: left;
+}
+
+.adverts {
+		float: right;
+		margin-right: 15px;
+		position: relative;
+
+}
+
+.search-btn{
+			border-radius: 0 5px 5px 0;
+			border: none;
+			width: 60px;
+			background: #87ceeb;
+			float: left;
+			font-size: 16px;
+			padding: 2.5px
+			}
+
+#banner{
+		font-family: Comic Sans MS;
+		font-size: 45px;
+		letter-spacing: 4.5px;
+		background: #dc143c;
+		border-radius: 0px;
+		color: #ff8c00;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		}
+
+.form{
+	position: absolute;
+	margin-right: 300px;
+	margin-left: 400px;
+	}
+
+.rounded{
+		border-radius: 10px;
+		display: inline-block;
+		line-height: 2.0;
+		padding: 8px 25px;
+		background-color: #6495ed;
+		color: #ffffff;
+		border: none;
+		}
+
+button:hover{
+	opacity: 15;
+	background: #4169e1;
+	color: #ffffff;
+	}
+
+
+input:hover {
+			border-color: #ff0000;
+			}
+
+.side-nav{
+		margin-left: 15px;
+		font-size: 15px;
+		float: left;
+		width: 170px;
+		padding: 0px 0px 0px 20px;
+
+		}
+
+.aside-nav a, .folly a {
+			display: block;
+			padding: 10px;
+			border-bottom: 1px solid #eeeeee;
+			border-radius: 0px;
+
+			}
+
+.aside-nav a:hover, .folly a:hover {
+					color: #985d6a;
+					background-color: #efefef;
+					}
+.folly {
+		margin-left: 200px;
+		font-size: 15px;
+		float: right;
+		width: 200px;
+}
+
+h4 {
+	margin: 20px 0px 5px 0px;
+	padding: 0px;
+	font-weight: normal;
+	}
+
+.base{
+	display: block;
+	border-top: 1px solid black;
+}
+
+.copy{
+	color: #ffffff;
+	width: auto;
+	margin-top: 100%;
+	padding-left: 20px;
+	padding-top: 5px;
+	padding-bottom: 20px;
+	background-color: #417890;
+}
+
+#mar{
+	direction: ltr;
+	margin-top: 5px;
+}
+
+
+/* Calendar Design */
+/***************** IF YOU ARE NOT AN ADMIN, PLEASE DO NOT ALTER VALUES *********************/
+.calender {
+		border-style: solid;
+		border-bottom-right-radius: 20px;
+		border-bottom-left-radius: 20px;
+}
+
+.calendar-section{
+		border-style: solid;
+		border-bottom-right-radius: 20px;
+		border-bottom-left-radius: 20px;
+
+}
+
+.calendar-title {
+			text-align: center;
+			background: #dc143c;
+			color: #ffffff;
+
+
+}
+
+.calebdar-table {
+			border-bottom-right-radius: 20px;
+		border-bottom-left-radius: 20px;
+}
+
+.calendar {
+		float: right;
+		margin-right: 20px;
+		margin-bottom: 20px;
+		border-top-right-radius: 20px;
+		border-top-left-radius: 20px;
+		border-bottom-right-radius: 20px;
+		border-bottom-left-radius: 20px;
+
+	}
+
+#today:hover {
+	opacity: 15;
+	background: #4169e1;
+	color: #ffffff;
+	border-radius: 50px;
+}
+
+#today {
+	background-color: #417890;
+}
+
+.update{
+		background-color: #ffebcd; 
+}
+.update:hover {
+		background-color: #deb887;
+}
+
+table, td {
+	border-style: dashed;
+	padding: 10px 10px 10px 10px;
+	border-bottom-right-radius: 20px; /* create the shield */
+	border-bottom-left-radius: 20px; /* create the shield */
+}
+
+/* Adjust to screen size */
+/* dont use now
+@media (min-width: 768px) {
+  .selector {
+    property: value;
+  }
+}
+@media (min-width: 992px) {
+  .selector {
+    property: value;
+  }
+}
+@media (min-width: 1200px) {
+  .selector {
+    property: value;
+  }
+ }
+ */

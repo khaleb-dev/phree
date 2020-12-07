@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JQuery | Light your Bulb</title>
+		<meta http-equiv="Content-Type" charset="UTF-8">
+
+	<script type="text/javascript" src="jquery-1.10.2.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			contacts = ["name 1","name 2","name 3","name 4","name 5"];
+				var sn = 0;
+
+			for (var x in contacts)
+				{
+					$('#getme').html("<tr><td>'+(++sn)+'</td><td>'+contacts[x]+'</td></tr>");
+				}
+		});
+	</script>
+</head>
+<body>
+	
+	<table id="getme">
+		<!--<thead>
+			<tr><th>S/N</th>
+				<th>Name</th>
+			</tr>
+		</thead>-->
+
+	</table>
+
+	<br><br>
+	 <button onclick="addnew()">Click Here to add a new table row</button>
+
+
+
+</body>
+</html>

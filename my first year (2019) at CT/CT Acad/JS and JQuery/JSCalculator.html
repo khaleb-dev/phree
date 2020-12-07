@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Calculator</title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="./lib/jquery-2.1.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="./lib/fontawesome-all.css">
+	<script type="text/javascript" src="./lib/fontawesome-all.js"></script>
+	<!--<script type="text/javascript" src="./lib/bootstrap.min.css"></script>-->
+
+	<style type="text/css">
+		.cal-container{
+			background-color: #faebd7;
+			padding: 5px 400px 5px 400px;
+			height: 700px;
+		}
+
+		.cal-content {
+			margin: 50px;
+			background-color: #faccc8;
+			width: 245px;
+			padding-top: 10px;
+			border-radius: 20px;
+
+		}
+
+		.lcd {
+			height: 100px;
+			background-color: #ffffff;
+			padding: 15px;
+			border-top-right-radius: 20px;
+			border-top-left-radius: 20px;
+			margin: 10px 10px 0px 10px; 
+		}
+
+		.operation-lcd {
+			overflow-x: auto;
+			height: 50px;
+			text-align: right;
+		}
+
+		.result-lcd {
+			height: 60px;
+			text-align: right;
+			overflow-x: auto; 
+			font-size: 30px;
+		}
+
+		.key {
+			padding: 15px;
+		}
+
+
+		button {
+			width: 50px;
+			height: 50px;
+			padding: 8px;
+			text-align: center;
+			font-size: 20px;
+			border-radius: 10px;
+			margin: 4px 0px 4px 0px;
+		}
+
+		.equal-btn {
+			width: 210px;
+		}
+
+		button:hover {
+			background-color: 
+		}
+
+	</style>
+
+	<script type="text/javascript">
+		function extract(element){
+			var btn = $(element);
+			var btntype = btn.data("type")
+			var btnvalue = btn.data("value")
+
+
+			console.log('clicked '+btntype)
+			console.log('clicked '+btnvalue)
+
+		};
+	</script>
+
+
+</head>
+<body>
+
+<div class="cal-container">
+	<div class="cal-content">
+		<div class="lcd">
+			<div class="operation-lcd">54321345612345</div>
+			<div class="result-lcd">334423456</div>
+		</div>
+
+		<div class="key">
+
+			<button data-type="operator" data-value="%" onclick="extract(this)">%</button>
+			<button data-type="operator" data-value="cs" onclick="extract(this)">CS</button>
+			<button data-type="operator" data-value="Bksp" onclick="extract(this)"><i class="fas fa-arrow-left"></i></button>
+			<button data-type="operator" data-value="." onclick="extract(this)">.</button><br />
+			<button data-type="number" data-value="1" onclick="extract(this)">1</button>
+			<button data-type="number" data-value="2" onclick="extract(this)">2</button>
+			<button data-type="number" data-value="3" onclick="extract(this)">3</button>
+			<button data-type="operator" data-value="+" onclick="extract(this)">+</button><br />
+			<button data-type="number" data-value="4" onclick="extract(this)">4</button>
+			<button data-type="number" data-value="5" onclick="extract(this)">5</button>
+			<button data-type="number" data-value="6" onclick="extract(this)">6</button>
+			<button data-type="operator" data-value="-" onclick="extract(this)">-</button><br />
+			<button data-type="number" data-value="7" onclick="extract(this)">7</button>
+			<button data-type="number" data-value="8" onclick="extract(this)">8</button>
+			<button data-type="number" data-value="9" onclick="extract(this)">9</button>
+			<button data-type="operator" data-value="*" onclick="extract(this)">x</button><br />
+			<button data-type="operator" data-value="&&" onclick="extract(this)">&&</button>
+			<button data-type="number" data-value="0" onclick="extract(this)">0</button>
+			<button data-type="operator" data-value="||" onclick="extract(this)">||</button>
+			<button data-type="operator" data-value="/" onclick="extract(this)">/</button><br />
+			<button class="equal-btn" data-type="operator" data-value="=" onclick="extract(this)">=</button>
+
+		</div>
+	</div>
+
+</div>
+
+
+</body>
+</html>

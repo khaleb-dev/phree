@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My e-Shopping Mall | Admin mode</title>
+	<meta http-equiv="Content-Type" charset="UTF-8">
+	<meta name="viewport" content="width=device-width; initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="./lib/fontawesome-all.css">
+	<link rel="stylesheet" type="text/css" href="./lib/mainstyle.css">
+	<script type="text/javascript" src="./lib/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="./lib/core.js"></script>
+	<script type="text/javascript" src="./lib/item-qwery.js"></script>
+
+
+
+<script type="text/javascript">
+	$('document').ready(function(){
+		$('#ldata').fadeIn(2000).css({'height':'60%' , 'width':'30%' , 'box-shadow':'#333 0 0 8px' , 'position':'fixed' , 'top':'15%', 'left':'35%' , 'z-index':'10' , 'padding-top':'60px'});
+		$('.cell').css({'padding':'5px' , 'margin':'15px'})
+	});
+ 
+
+	//background-color: rgba(0,0,0,0.4); 
+
+</script>
+
+
+</head>
+<body>
+		<div id="ldata">
+			<form action="" method="POST" class="">
+				<div class="cell">
+					<label for="text"><b>Account ID:</b> </label>
+						<input type="text" name="admin-loginID" class="pull input" id="admin-loginID" placeholder="Enter your Account ID" required/><br /><br />
+					<label><b>Password:</b></label> 
+						<input type="password" placeholder="Enter Password" class="pull input" name="admin-psw" id="admin-psw" required><br /><br /><br />
+				</div>
+				<div style="background-color: #faebd7; margin: 0px; padding: 15px;">
+						<button type="button" class="rounded btn button" onClick="validator()">Login</button>
+							<span class="psw"><a href="#">Forgot password?</a></span><br>
+							<span class="psw"><a href="#">Request for a New Account ID?</a></span> 
+
+				</div>
+			</form>
+		</div>
+</body>
+</html>
