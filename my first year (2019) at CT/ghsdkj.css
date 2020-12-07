@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VisualLightBox>
+    <Gallery version="2.5">
+        <Settings>
+            <AppName>cssSlider</AppName>
+            <AppUrlS>cssSlider.com</AppUrlS>
+            <AppVersion>2.1</AppVersion>
+            <AutoPlay>true</AutoPlay>
+            <Captions>true</Captions>
+            <CaptionsEffect>slide</CaptionsEffect>
+            <Controls>true</Controls>
+            <GalleryDesc></GalleryDesc>
+            <GalleryKeywords></GalleryKeywords>
+            <GalleryName>ghsdkj</GalleryName>
+            <GallerySuffix>1</GallerySuffix>
+            <GalleryTitle></GalleryTitle>
+            <HtmlCharset>UTF-8</HtmlCharset>
+            <ImageAspectRatio>true</ImageAspectRatio>
+            <ImageEffect>slide</ImageEffect>
+            <ImageFillColor>#FFFFFF</ImageFillColor>
+            <ImageHeight>360</ImageHeight>
+            <ImageQuality>90</ImageQuality>
+            <ImageShrink2>false</ImageShrink2>
+            <ImageStretch>true</ImageStretch>
+            <ImageTemplate>:/templates/backgnd/utter/</ImageTemplate>
+            <ImageTemplateName>Utter</ImageTemplateName>
+            <ImageWidth>640</ImageWidth>
+            <Images>true</Images>
+            <JoomlaType>2.5</JoomlaType>
+            <OneLoop>false</OneLoop>
+            <PlayPause>true</PlayPause>
+            <PublishIndex>cssslider.html</PublishIndex>
+            <PublishPath></PublishPath>
+            <PublishPreview>true</PublishPreview>
+            <RelativePath>false</RelativePath>
+            <ShowBullets>true</ShowBullets>
+            <ShowTooltips>true</ShowTooltips>
+            <SlideshowDelay>60</SlideshowDelay>
+            <SlideshowDuration>20</SlideshowDuration>
+            <SoundEnable>false</SoundEnable>
+            <SoundFileName></SoundFileName>
+            <StopOnHover>false</StopOnHover>
+            <TemplateFont>Montserrat</TemplateFont>
+            <TemplateName>utter</TemplateName>
+            <ThumbHeight>48</ThumbHeight>
+            <ThumbQuality>90</ThumbQuality>
+            <ThumbWidth>0</ThumbWidth>
+            <Thumbnails>false</Thumbnails>
+            <TooltipPos>bottom</TooltipPos>
+            <WatermarkAlign>66</WatermarkAlign>
+            <WatermarkBgColor>#ffffff</WatermarkBgColor>
+            <WatermarkColor>#514242</WatermarkColor>
+            <WatermarkHaveBgColor>true</WatermarkHaveBgColor>
+            <WatermarkOpacity>80</WatermarkOpacity>
+            <color>#3b384b</color>
+            <descriptionPos>bottomLeft</descriptionPos>
+            <enableTouch>false</enableTouch>
+            <fullWidth>0</fullWidth>
+            <ieSupport>true</ieSupport>
+            <noFrame>false</noFrame>
+            <showHover>true</showHover>
+        </Settings>
+        <Images RelativePath="false">
+            <Image>
+                <url>F:/Khaleb O'Brien/eSM/images/huawei-mate-20-pro.jpg</url>
+                <title>huawei-mate-20-pro</title>
+            </Image>
+            <Image>
+                <url>F:/Khaleb O'Brien/eSM/images/huawei-p20.jpg</url>
+                <title>huawei-p20</title>
+            </Image>
+            <Image>
+                <url>F:/Khaleb O'Brien/eSM/images/huawei-p20-pro.jpg</url>
+                <title>huawei-p20-pro</title>
+            </Image>
+            <Image>
+                <url>F:/Khaleb O'Brien/eSM/images/blackberry-key2.jpg</url>
+                <title>blackberry-key2</title>
+            </Image>
+            <Image>
+                <url>F:/Khaleb O'Brien/eSM/images/google-pixel-3.jpg</url>
+                <title>google-pixel-3</title>
+            </Image>
+            <Image>
+                <url>F:/Khaleb O'Brien/eSM/images/htc-u12-plus.jpg</url>
+                <title>htc-u12-plus</title>
+            </Image>
+        </Images>
+    </Gallery>
+</VisualLightBox>

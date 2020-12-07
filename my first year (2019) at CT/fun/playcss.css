@@ -1,0 +1,164 @@
+/*********************************************
+		Author:	Kaleb O'Brien
+*********************************************/
+
+
+body{
+	font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin-left: 40px;
+    margin-right: 40px;
+	}
+
+.general{
+		
+		}
+
+.all{
+	background: #F6F6ED;
+
+	}
+.centered{
+		text-align: center;
+		max-width: 1200px;
+		margin: 0 auto;
+		width: 100%;
+		}
+
+.navbar{
+		letter-spacing: 0px;
+		background: #deb887;
+		border-bottom-style: groove;
+		border-top-style: ridge;
+		}
+
+a {
+    color: #444444;
+    text-decoration: none;
+	}
+
+a:hover, a:focus, a:active {
+    background: #4169e1;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 5px;
+							}
+
+ul {
+	li
+	}
+
+li {
+	position: relative;
+	display: inline-block;
+	font-size: 16px;
+	}
+
+.searchbar{
+			border: none;
+			position: relative;
+			float: right;
+			margin: 0px 0px 0px 400px;
+			max-width: 600px;
+			}
+
+.search-input{
+				border-radius: 5px 0 0 5px;
+				border-right: 0;
+				border: none;
+				float: left;
+				font-size: 18px;
+			}
+
+.search-btn{
+			border-radius: 0 5px 5px 0;
+			border: none;
+			width: 60px;
+			background: #87ceeb;
+			float: left;
+			font-size: 16px;
+			padding: 2.5px
+			}
+
+.account{
+			border-radius: 0 5px 5px 0;
+			border: none;
+			width: 60px;
+			background: #87ceeb;
+			float: left;
+			font-size: 16px;
+			padding: 2.5px
+			}
+
+#banner{
+		font-family: Comic Sans MS;
+		font-size: 45px;
+		letter-spacing: 4.5px;
+		background: #dc143c;
+		border-radius: 10px;
+		color: #ff8c00;
+		}
+
+.form{
+	position: absolute;
+	margin-right: 300px;
+	margin-left: 400px;
+	}
+
+.lform{
+	position: absolute;
+	margin-right: 300px;
+	margin-left: 400px;
+	margin-top: 600px;
+	}
+
+.rounded{
+		border-radius: 10px;
+		display: inline-block;
+		line-height: 2.0;
+		padding: 8px 25px;
+		background-color: #6495ed;
+		color: #ffffff;
+		border: none;
+		}
+.ex{
+	padding: 5px 25px 15px;
+	margin-bottom: 20px;
+	}
+
+.leg{
+	text-align: center;
+	font-size: 18px;
+	}
+
+.btn{
+	background: #4169e1;
+	}
+.left{
+	margin-left: 100px;
+
+	}
+button:hover{
+	opacity: 15;
+	background: #4169e1;
+	color: #ffffff;
+	}
+
+.btn:hover{
+		background: #ffffff;
+		color: #4169e1;
+}
+input:hover{
+			border-color: #ff0000;
+			}
+
+#foot{
+	color: blue;
+	margin-top: 100%;
+	margin-bottom: auto;
+	}
+
+#mar{
+	direction: ltr;
+	margin-top: 5px;
+}

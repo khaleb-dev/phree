@@ -1,0 +1,120 @@
+<!-- html5 by Khaleb O'Brien -->
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="UTF-8">
+	<title>Khaleb's Playground</title>
+
+	<!-- Style Library -->
+	<link rel="stylesheet" type="text/css" href="plib/playcss.css">
+
+	<!-- Script Library -->
+	<script src="playscript.js"></script><!-- Script not developed yet -->
+	<script type="text/javascript">
+
+		function validator()
+		{
+			var surname = document.getElementById("surname");
+			var othernames = document.getElementById("othernames");
+			var dob = document.getElementById("dob");
+			var sex = document.getElementById("sex");
+			var email = document.getElementById("email");
+			var mobile = document.getElementById("mobile");
+
+
+
+			if (surname.value == ""){ //if surname have no value,
+				alert("Please input your Surname"); //show an alert
+				surname.focus(); //also identify the empty space
+				return; //stop alert
+			}
+			
+			if (othernames.value == ""){
+				alert("Please Other Names");
+				othernames.focus();
+				return;
+			}
+
+			
+			if (dob.value == ""){
+				alert("Date of Birth is missing");
+				dob.focus();
+				return;
+			}
+
+			if (sex.value == ""){
+				alert("Please select ypou Gender");
+				sex.focus();
+				return;
+			}
+			
+			if (email.value == ""){
+				alert("Put your email address");
+				email.focus();
+				return;
+			}
+
+			if (mobile.value.length<11){
+				alert("Invalid Phone Number");
+				mobile.focus();
+				return;
+			}
+		}
+
+	</script>
+  </head>
+	<!-- my work begins here with HTML 5 -->
+	<body class="all">
+		<header role="banner" class="centered" id="banner">CorrosiveTeam</header>
+		  	<nav class="navbar">
+				<ul>
+					<li><a href="">First link</a> | </li>
+					<li><a href="">Second link</a> | </li>
+					<li><a href="">Third link</a> | </li>
+					<li><a href="">Fourth link</a> | </li>
+					<li><a href="">Fifth link</a></li>
+					<li>
+						<div class="searchbar">
+							<form method="POST" action="" accept-charset="UTF-8">
+								<input name="find" type="text" class="search-input">
+									<button class="search-btn">Search</button>
+							</form>
+						</div>
+					</li>
+				</ul>
+			</nav>
+					<marquee id="mar">be corrosive</marquee>
+				<br />
+		  			<hr width="100%"><br />
+		<div class="form">
+			<form action="" method="POST">
+				<fieldset class="rounded ex">
+					<legend class="rounded leg">User Registration</legend>
+					<label for="surname">Surname: </label>
+						<input type="text" class="pull" id="surname" placeholder="O'Brien" autofocus /><br />
+					<label for="othernames">Other Names: </label>
+						<input type="text" class="pull" id="othernames" placeholder="Khaleb" /><br />
+					<label for="dateofbirth">Date of Birth: </label>
+						<input type="date" name="dateofbirth" class="pull" id="dob" /><br />
+					<label for="gender">Gender: </label>
+						<input type="radio" class="pull" name="sex" value="male" /> Male <input type="radio" class="pull" name="sex" value="female" /> Female<br />
+					<label for="email">Email: </label>
+						<input type="email" name="email" class="pull" id="email" placeholder="username@domain.com" /><br />
+					<label for="mobile">Phone Number: </label>
+						<input type="number" class="pull" name="mobile" placeholder="+234 (0) 801 234 5678" /><br />
+
+						<input type="button" value="Finish" class="rounded btn" onClick="validator()" /> 
+
+						<input type="reset" class="rounded btn left" /><br />
+				</fieldset>
+			</form>
+		</div>
+		<article>ma article containing sections
+			<section>
+				<h1>ma section</h1>
+			</section>
+		</article>
+		<aside>ma aside contents</aside>
+		<footer id="foot" class="centered">ma footer | &copy; 2018 | <i>powered by</i> <b title="The Corrosive Team">CorrosiveCodes</b></footer>
+	</body>
+</html>
