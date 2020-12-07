@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>Food Frenzy Game</title>
+<meta name="viewport" content="width=device-width">
+<link href="Food%20Frenzy%20Game_files/css.css" rel="stylesheet">
+<style>
+body {
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  background-color: black;
+  margin: -1px 0 0 -1px;
+  text-align: center;
+  font-size: 14px;
+}
+
+canvas {
+  background-color: white;
+  border: 1px solid black;
+}
+
+table {
+  position: absolute;
+  width: 360px;
+  height: 300px;
+  background-color: black;
+  top: 50%;
+  opacity: 0.9;
+  margin: auto;
+  margin-top: -150px;
+  left: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+td {
+  padding: 24px;
+}
+
+p {
+  line-height: 28px;
+}
+
+.social-share img {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+.fullscreen footer, .fullscreen header {
+  display: none;
+}
+
+.fullscreen table {
+  top: 170px;
+}
+</style>
+
+<script src="Food%20Frenzy%20Game_files/paper.js"></script>
+
+
+<script type="text/paperscript" canvas="paperscriptCanvas" id="paperscope-1" data-paper-ignore="true">
+view.pause();
+//Add a player object to the game
+new Game.Player(100, 100, '/images/players/cat.png')
+
+//Create a variable to store the score
+var score = new Game.Score()
+
+//Stop the game once they've got 6 items
+Game.GoodItem.onCollect = function() {
+  if (score.get() >= 6) {
+    timer.stop()
+  }
+}
+
+//Add some good items for the player to collect
+new Game.GoodItem(50, 50, '/images/food/hotdog.png')
+new Game.GoodItem(300, 100, '/images/food/sandwich.png')
+new Game.GoodItem(150, 200, '/images/food/fries.png')
+new Game.GoodItem(350, 550, '/images/food/chicken.png')
+new Game.GoodItem(50, 500, '/images/food/fish.png')
+new Game.GoodItem(250, 400, '/images/food/cheese.png')
+
+//Add some obstacles for the player to avoid
+new Game.Obstacle(50, 350, '/images/items/plant.png')
+new Game.Obstacle(150, 250, '/images/items/rock.png')
+new Game.Obstacle(150, 100, '/images/items/bin.png')
+new Game.Obstacle(300, 250, '/images/items/plant.png')
+new Game.Obstacle(350, 350, '/images/items/rock.png')
+new Game.Obstacle(200, 500, '/images/items/bin.png')
+
+//Create a timer
+var timer = new Game.Timer(15)
+
+//Start the timer
+function onKeyDown() {
+  if (timer.getTimeElapsed() == 0) {
+    timer.start()
+  }
+}
+
+//Stop the game once the timer reaches zero
+timer.onTimeout = function() {
+  Game.gameOver = true
+}
+
+//Set a background image
+Game.setBackgroundImage('/images/backgrounds/park.png')
+
+
+</script>
+
+</head><body><header>
+	<a href="https://www.codeavengers.com/"><img src="Food%20Frenzy%20Game_files/RedLogoMedium.png" alt="Code Avengers logo" style="margin-top: 20px;" width="200" height="25"></a>
+	<br><span>presents</span>
+	<h1>"Food Frenzy Game" by EBUKAUCHE52</h1>
+</header>
+
+<!--tabindex is needed to give the canvas the focus-->
+<canvas id="paperscriptCanvas" tabindex="0" oncontextmenu="return false;" width="402" height="602" style="background-image: url(&quot;/images/backgrounds/park.png&quot;);"></canvas>
+
+<footer>
+	<p>Learn to make apps, games and websites with <a style="color: #ef5555;" href="https://www.codeavengers.com/">CodeAvengers.com</a>
+
+  </p></footer>
+<!-- <br>Share this app: 
+<a class="social-share" href="http://facebook.com/CodeAvengers"><img src="https://www.codeavengers.com/image/facebook.png"></a>
+<a class="social-share" href="http://twitter.com/CodeAvengers"><img src="https://www.codeavengers.com/image/twitter.png"></a>
+<a class="social-share" href="https://plus.google.com/105827980034533177298"><img src="https://www.codeavengers.com/image/google.png"></a> -->
+
+<table onclick="this.style.display='none';paper.view.play(); paperscriptCanvas.focus()">
+
+<tbody><tr>
+      <td>  
+  <h2>Instructions</h2>
+  <p>
+  
+        </p><p>
+          <b>Click to start</b>
+
+  </p></td></tr></tbody></table>
+
+<script>
+  if (location.search.indexOf('fullscreen') > 0) {
+    document.body.className = 'fullscreen';
+  }
+</script>
+
+</body></html>
